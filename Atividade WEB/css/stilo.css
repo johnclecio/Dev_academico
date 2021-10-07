@@ -16,10 +16,9 @@ h2 {
 /* plano de fundo*/
 main 
 {
-  background: url("/imagens/foto2.jpg") no-repeat center center;
+background: url("imagens/img.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
-}
 /* caixa */
 .box
 {
