@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/stilo.css">
+    <title>Turismo</title>
+</head>
+<!-- Meu Script em javascript -->
+<script>
+function Calc_total() {
+       var  qtd  = parseInt(document.getElementById('cQtd').value);
+       tot = qtd * 300,00;
+       valDolar = tot / 5.40;
+       document.getElementById('cTot').value = tot;
+       document.getElementById('cDolar').value = valDolar;
+   }
+  
+
+function myFunction()
+{
+var x;
+
+var codigo=prompt("Digite seu codigo de 4 Digitos:");
+
+if (codigo!=null)
+  {
+  x="codigo: " + codigo + " ok.";
+  document.getElementById("").innerHTML=x;
+  }
+}
+</script>
+<body>
+    <main></main>  
+<!-- Formulario em box  -->
+    <div class="box">
+        <div>
+            <h2>Excursão para Lençóis Maranhenses, de Fortaleza</h2>
+            <br>
+        </div>
+<!-- Formulario  -->
+    <form method="post" id="fContato" action="mailto:johncleciofideleslima2014@gmail.com" enctype="text/plain"  oninput="Calc_total();" >
+        <fieldset>
+            <div>
+                <p><label for="cQtd">Total de pessoas</label><br>
+                <input class="cor"type="number" required name="Quantidade" id="cQtd" min="0"max="100" value="0"/></p>
+
+                <p><label for="cTot">Preço Total: R$</label><br>
+                <input class="cor"type="number" required name="Reais" id="cTot"placeholder="Total a Pagar" readonly/></p>
+
+                <p><label for="">Valor em Dolares: U$</label><br>
+                <input class="cor"type="number" required name="Dolares" id="cDolar" placeholder="Total em Dolares" readonly/></p><br>
+
+                <p><label id="cCard">Forma de Pagamento:</label><br>
+                <input type="radio" name="Card" id="cCard" checked/> <label for="cCard">crédito</label><br>
+                <input type="radio" name="Card" id="cCard"/> <label for="cDe">débito</label> </p><br>
+
+                <p><label for="cCpf">CPF:</label><br>
+                <input  class="cor" type="text" required name="CPF" id="cCpf" size="20" maxlength="11" placeholder="11 Digitos" /></p>                
+
+                <p><label for="cCard">Número do cartão:</label><br>
+                <input class="cor"type="text" required name="nuCard" id="cCard" size="20" maxlength="16" placeholder="16 Digitos" /></p>
+                
+
+                <p><label for="cCvv">CVV</label><br>
+                <input class="cor"type="text" required name="Cvv" id="cCvv" size="3" maxlength="3" placeholder="3 Digitos"> </p>
+                 <br>
+                 <br>
+                <button class="botao"type="reset" form="fContato">Limpa</button><br>
+                
+	             <br>
+                 <form>               
+                    <p>Clique para colocar o codigo PIN.</p>
+
+                    <button class="botao" form="fContato" value="Finalizar Compra" onclick="myFunction()" >Finalizar</button>
+                    
+                    <p id=""></p>
+                    
+                 </form>               
+            </div>
+        </fieldset>
+    </form> 
+   <!-- Meus contatos -->
+   <footer classe="rodape">
+    <p>Copyright &copy; 2021 - by John Clecio <br/>
+        <a href="https://www.figma.com/file/Qaen6mybYGBcyIYYm5p1d6/index?node-id=2%3A3"target="_blank">figma</a> <br>
+        <a href="https://github.com/johnclecio/Dev_academico" target="_blank">gitHub</a><br>
+        <a href="https://www.linkedin.com/in/johnmaclima/" target="_blank">linkedin</a></p>
+    </footer>
+   
+   
+   
+</body>
+</html>
