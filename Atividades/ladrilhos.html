@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Jogo do Ladrilhos</title>
+</head>
+
+<body>
+<div id="tela">
+        <h1>JOGUE CONTRA O TEMPO </h1>
+            <div id="puzzle">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="button" id="b1" value="1" onclick="btclick(1)" "btclick(1)">
+                            </td>
+                            <td>
+                                <input type="button" id="b2" value="2" onclick="btclick(2)">
+                            </td>
+                            <td>
+                                <input type="button" id="b3" value="3" onclick="btclick(3)">
+                            </td>
+                        </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" id="b4" value="4" onclick="btclick(4)" >
+                                </td>
+                                <td>
+                                    <input type="button" id="b5" value="5" onclick="btclick(5)">
+                                </td>
+                                <td>
+                                    <input type="button" id="b6" value="6" onclick="btclick(6)">
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" id="b7" value="7" onclick="btclick(7)">
+                                    </td>
+                                    <td>
+                                        <input type="button" id="b8" value="8" onclick="btclick(8)">
+                                    </td>
+                                    <td>
+                                        <input type="button" id="b9" value="   " onclick="btclick(9)" disabled>
+                                    </td>
+                                </tr>
+                                      
+
+                    </tbody>
+                   
+                </table>
+            </div> 
+            
+            <button onclick="window.location.reload()">REINICIAR</button> <br> 
+           
+            <script type="text/javascript" src="ladrilhos.js"></script>
+            <audio id="sound" src="bomba.mp3" style="display: none;"></audio>
+
+                        <div class="container">
+                            <h2>Minutos:</h2>
+                            <select id="minutos" name="minutos"></select>
+
+                            <h2>Segundos:</h2>
+                            <select id="segundos" name="segundos"></select>
+                            <br/>
+                            <br/>
+                            <button id="comecar">Começar!</button><br>
+                            <button id="parar">Stop</button>
+
+                            <div id="display">
+                                <h3></h3>
+                                <p>O jogador deve seguir a configuração final</p>
+                                <p><img src="finalização.png" alt=""></p>
+                            </div>
+                        </div>
+
+           
+       
+            <div class="rodape">
+                <img class="john" src="https://i.ibb.co/cw7wvCG/3.jpg"  width="100" height="100" alt="john clecio">
+                <a href="https://www.johnmaclima.com/"target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5988/5988512.png" width="28" height="28" alt="meusite">
+                </a>
+                <a class="git" href="https://github.com/johnclecio/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png" width="28" height="28" alt="github">
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/johnmaclima/" target="_blank">   
+                    <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png" width="28" height="28" alt="linkedin">
+                </a>
+                <a class="you" href="https://www.youtube.com/c/johncleciofideleslima/videos"target="_blank">    
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="35" height="35" alt="youtube">
+                </a>
+                <a  class="Twi" href="https://www.twitch.tv/mac5182" target="_blank">         
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" width="28" height="28" alt="Twitch">
+                </a> 
+                <p>Copyright &copy; 2021 - by John Lima</p>
+            </div>
+       
+
+</div>
+<script src="alarme.js"></script>
+</body>
+
+</html>

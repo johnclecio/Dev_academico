@@ -1,0 +1,69 @@
+
+body{
+    background: linear-gradient(to right bottom, rgb(17, 15, 29), rgb(86, 84, 247), rgb(0, 0, 0));  
+    font-size: 22px;
+    
+}
+
+input {
+    background: silver;
+    font-size: 90px;
+}
+h1 {
+    text-align: center;
+}
+#tela {
+    padding: 0px;
+}
+table {
+    margin-left: 550px;
+}
+button {
+    margin-left: 550px;
+    font-size: 30px;
+    color: black;
+    background: blue;
+}
+.rodape {
+    margin-left: 550px;
+    margin-bottom: 38px;
+}
+.john{
+    border-radius: 50%;
+    margin-left: 10px ;
+}
+.links {
+    margin-left: 50px;
+}
+a {
+    text-decoration: none;
+}
+
+.container{
+    text-align: center;
+}
+select{
+    width: 70px;
+    height: 60px;
+    font-size: 2em;
+    color: #0043ffcc;
+    background-color: #0a0909;
+    display: inline-block;
+}
+
+h2{
+display: inline-block;
+margin: 65px 0px 0px 40px;
+font-family: fantasy;
+font-weight: 500;
+}
+#comecar {
+    margin-left: 0px;
+
+}
+#parar {
+    margin-left: 0px;
+}
+
+
+
